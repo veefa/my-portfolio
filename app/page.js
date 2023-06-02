@@ -1,76 +1,52 @@
 import Image from 'next/image'
+import styles from '../styles/globals.css'
+import Head from 'next/head'
+import {BsFillMoonFill} from 'react-icons/bs';
+import {FaLinkedinIn, FaGithubAlt} from 'react-icons/fa'
+import {AiOutlineCodepen, AiOutlineTwitter} from 'react-icons/ai'
+import {GiAstronautHelmet} from 'react-icons/gi'
+
+
+
 
 export default function Home() {
+  const iconStyling = 'bg-gradient-to-r from-blue-300 to-purple-500 text-black rounded-md ';
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+    <div>
+      <main className="bg-black px-10 ">
+        <section className='min-h-screen'> 
+          <nav className='py-10 mb-12 flex justify-between'>
+            <h1 className='text-xl text-white'> devlop</h1>
+            <ul className='flex justify-center'>
+              <li>
+                <BsFillMoonFill className='cursor-pointer text-xl'/>
+              </li>
+              <li href='#'>
+                <a className='font-semibold bg-gradient-to-r from-blue-300 to-purple-500 px-4 py-2 rounded-md ml-8'>RESUME</a>
+              </li>
+            </ul>
+          </nav>
+          <div className='text-center p-10'>
+            <h2 className='font-semibold text-5xl py-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-500'>WAFAE HAMDAOUI</h2>
+          <div className=' flex justify-center p-10'>
+            <GiAstronautHelmet className='text-9xl text-center   bg-gradient-to-r from-blue-300 to-purple-500 text-black rounded-md '/>
+          </div>             
+            <h3 className='text-2xl py-3 text-white'>Developer & Designer.</h3>
+            <p className='text-sm py-5 leading-8  text-gray-300'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p>
+          </div>  
+                
+          <div className='text-3xl flex justify-center gap-16 py-3'>
+ 
+            <AiOutlineTwitter className={iconStyling}/>
+            <FaLinkedinIn className={iconStyling}/>
+            <FaGithubAlt className={iconStyling}/>
+            <AiOutlineCodepen className={iconStyling}/>
+          </div>
 
-      </div>
+        </section>
+      </main> 
+    </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-black-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/wafae.svg"
-          alt="wafae Logo"
-          width={400}
-          height={150}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-xl font-semibold`}>
-            ABOUT{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-xl font-semibold`}>
-            SKILLS{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-xl font-semibold`}>
-            WORKS{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut          </p>
-        </a>
-
-
-      </div>
-
-    </main>
 
   )
 }
