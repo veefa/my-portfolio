@@ -29,20 +29,24 @@ export default function Home() {
           <div className='text-center p-10'>
             <h2 className='font-semibold text-5xl py-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-500'>WAFAE HAMDAOUI</h2>
           <div className=' flex justify-center p-10'>
-            <GiAstronautHelmet className='text-9xl text-center   bg-gradient-to-r from-blue-300 to-purple-500 text-black rounded-md '/>
+            <GiAstronautHelmet className='text-9xl text-center bg-gradient-to-r from-blue-300 to-purple-500 text-black rounded-md '/>
           </div>             
             <h3 className='text-2xl py-3 text-white'>Developer & Designer.</h3>
             <p className='text-sm py-5 leading-8  text-gray-300'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p>
-          </div>  
-                
-          <div className='text-3xl flex justify-center gap-16 py-3'>
- 
+          </div>   
+        </section>
+        <section>
+          <div>
+            <h3 className='text-gray-200 text-2xl py-2'>ABOUT ME</h3>
+          </div>
+        </section>
+        <section>
+        <div className='text-3xl flex justify-center gap-16 py-3'>
             <AiOutlineTwitter className={iconStyling}/>
             <FaLinkedinIn className={iconStyling}/>
             <FaGithubAlt className={iconStyling}/>
             <AiOutlineCodepen className={iconStyling}/>
           </div>
-
         </section>
       </main> 
     </div>
