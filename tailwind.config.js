@@ -7,7 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily:{},
+      fontFamily:{
+        'mono': ['ui-monospace', 'SFMono-Regular'],
+      },
       backgroundImage: {},
     },
   },

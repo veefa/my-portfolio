@@ -16,7 +16,7 @@ export default function Home() {
       <main className="bg-black px-10 ">
         <section className='min-h-screen'> 
           <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl text-white'> devlop</h1>
+            <h1 className='text-xl text-white fon-mono'> DEVELOPEDBY</h1>
             <ul className='flex justify-center'>
               <li>
                 <BsFillMoonFill className='cursor-pointer text-xl'/>
