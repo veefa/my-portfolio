@@ -6,12 +6,17 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      fontFamily:{
-        'mono': ['ui-monospace', 'SFMono-Regular'],
+    extend: {      typography: {
+      DEFAULT: {
+        css: {
+          fontFamily: 'space Mono',
+        },
       },
+    },
       backgroundImage: {},
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
